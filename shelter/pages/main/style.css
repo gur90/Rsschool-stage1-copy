@@ -105,11 +105,6 @@
  }
  .navigation_nonbordered {
     list-style: none;
-  
-    
-    
-    
-    
  }
  .nonbordered {
     font-family: 'Arial';
@@ -205,7 +200,9 @@
     text-decoration: none;
  }
  /*about*/
-
+.about {
+    height: 588px;
+}
  .about-pets {
     
      /*margin-right: 120px;*/
@@ -280,14 +277,27 @@
 
  /*pets*/
 
-
+.pets {
+ 
+    height: 877px;
+    background: #F6F6F6;
+}
  .pets-content {
+    
      display: flex;
      flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     gap: 60px;
+ }
+ .about-pets_box {
+     margin-top: 80px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
  }
  .about-pets_content {
-    width: 400px;
-    height: 90px;
      margin: 0 auto;
      font-family: 'Georgia';
     font-style: normal;
@@ -304,17 +314,91 @@
     color: #545454;
  }
  .button_left {
-     background-image: url("assets/images/button_arrow.png");
+     
+     margin-right: 72px;
+     background-image: url("assets/icons/Arrow.png");
      background-color: transparent;
-     Width:14px;
-     Height:6px;
+     width: 52px;
+height: 52px;
+border: 2px solid #F1CDB3;
+box-sizing: border-box;
+border-radius: 100px;
+ }
+ .button_right {
+   margin-left: 72px;
+    width: 52px;
+    height: 52px;
+    background-image: url("assets/icons/Arrow-right.png");
+    background-color: transparent;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
  }
  .pets-slider {
      display: flex;
      flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .pets-cards {
+     display: flex;
+     justify-content: space-between;
+     gap: 90px;
+
  }
  .pets-slider__card {
-     margin-right: 90px;
      display: flex;
      flex-direction: column;
+     gap:30px;
+     align-items: center;
  }
+.card-name {
+    width: 83px;
+height: 23px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+letter-spacing: 0.06em;
+color: #545454;
+}
+.button-learn {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+box-sizing: border-box;
+border-radius: 100px;
+background: #FAFAFA;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+
+letter-spacing: 0.06em;
+color: #292929;
+}
+.button-primary {
+   margin: 30px 509px 100px 510px;
+    width: 250px;
+height: 52px;
+background: #F1CDB3;
+border-radius: 100px;
+border: none;
+}
+.get-to {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+
+color: #292929;
+}
