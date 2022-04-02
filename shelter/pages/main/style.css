@@ -70,7 +70,7 @@
      white-space: nowrap;
      color: var(--main-color);
  }
- p { 
+ .logo-text { 
      margin: 0 0 0 0;
      padding: 0 0 0 0;
     font-family: 'Arial';
@@ -90,24 +90,22 @@
      margin-right: 10px;
      display: flex;
      flex-direction: row;
-    gap:35px
+    gap:35px;
  }
  
  .navigation_bordered {
-    
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     /* identical to box height, or 24px */
-    
-    
-    /* color-light-s */
-    
+
     color: #FAFAFA;
      list-style: none;
-     border-bottom:solid 3px   #F1CDB3;;
+     border-bottom:solid 3px   #F1CDB3;
+     cursor: pointer;
+     transition: 1s;
  }
  .navigation_nonbordered {
     list-style: none;
@@ -132,7 +130,7 @@
      gap:40px;
  }
  .content {
-     margin-top: 165px;
+     margin-top: 169px;
      width: 460px;
      height: 322px;
      gap: 43px;
@@ -142,36 +140,25 @@
      margin-bottom: 42px;
     width: 310px;
     height: 114px;
-    /*left: calc(50% - 310px/2 - 75px);
-    bottom: 208px;*/
-    
-    /* h2 */
-    
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    /* or 57px */
-    
-    display: flex;
-    align-items: center;
-    
-    /* color-light-xl */
-    
     color: #FFFFFF;
  }
  .not-only_text {
-
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+   white-space: nowrap;
     width: 460px;
-    height: 72px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    letter-spacing: 0.01em;
-    word-spacing: 0.01px;
+    letter-spacing: 0.001em;
+    /*word-spacing: 0.01px;*/
     color: #CDCDCD; 
  }
  .button_primary {
@@ -180,12 +167,13 @@
     height: 52px;
     left: calc(50% - 207px/2 - 126.5px);
     bottom: 0px;
-    
-    /* color-primary */
-    
-    background: #F1CDB3;
+    background: #FDDCC4;
     border-radius: 100px;
-    
+    cursor: pointer;
+    transition: 1s;
+ }
+ .button_primary:hover {
+     background-color:  #F1CDB3;;
  }
  .button_primary_text {
     font-family: 'Georgia';
@@ -229,8 +217,9 @@
  .about-shelter {
      margin-top: 0;
      margin-bottom: 0;
+     padding-bottom: 0;
     width: 370px;
-    height: 90px;
+    
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -246,6 +235,8 @@
     color: #545454;
  }
  .about_text {
+     margin-top: 0;
+     margin-bottom: 0;
     width: 430px;
     font-family: 'Arial';
     font-style: normal;
@@ -253,14 +244,11 @@
     font-size: 15px;
     line-height: 160%;
     letter-spacing: 0.001em;
-    /* or 24px */
-    
-    
-    /* color-dark-xl */
-    
     color: #4C4C4C;
  }
  .about_text_text {
+    margin-top: 0;
+    margin-bottom: 0;
     width: 430px;
     font-family: 'Arial';
     font-style: normal;
@@ -269,11 +257,6 @@
     line-height: 160%;
     letter-spacing: 0.001em;
     /* or 24px */
-    
-    display: flex;
-    align-items: center;
-    
-    /* color-dark-xl */
     
     color: #4C4C4C;
  }
@@ -322,9 +305,13 @@
     padding: 15px 16px;
     border-radius: 100px;
     border: 2px solid #F1CDB3;
-    
      width: 52px;
     height: 52px;
+    cursor: pointer;
+    transition: 1s;
+ }
+ .button_left:hover {
+     background-color:  #FDDCC4;
  }
  .button_right {
     display: inline-block;
@@ -332,20 +319,22 @@
     padding: 15px 16px;
     border-radius: 100px;
     border: 2px solid #F1CDB3;
-     
-     
      width: 52px;
     height: 52px;
+    cursor: pointer;
+    transition: 1s;
+ }
+ .button_right:hover {
+    background-color:  #FDDCC4;
  }
  .pets-slider {
-    
     height: 435px;
      display: flex;
      flex-direction: row;
      /*justify-content: space-between;*/
      justify-content: center;
      align-items: center;
-     
+     gap:55px
  }
  .pets-cards {
      
@@ -362,10 +351,16 @@
      flex-direction: column;
      gap:30px;
      align-items: center;
+     background: #FAFAFA;
+     cursor: pointer;
+     transition: 1s;
+ }
+ .pets-slider__card:hover {
+     background-color: #FFFFFF;
  }
 .card-name {
-    width: 83px;
-
+margin-top: 0;
+margin-bottom: 0;
 font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
@@ -390,14 +385,24 @@ line-height: 130%;
 
 letter-spacing: 0.06em;
 color: #292929;
+cursor: pointer;
+transition: 1s;
+}
+.button-learn:hover {
+   background-color:  #FDDCC4;
 }
 .button-primary {
-   margin: 30px 509px 100px 510px;
+   margin: 0 509px 100px 510px;
     width: 250px;
 height: 52px;
-background: #F1CDB3;
+background: #FDDCC4;
 border-radius: 100px;
 border: none;
+cursor: pointer;
+transition: 1s;
+}
+.button-primary:hover {
+    background: #F1CDB3;
 }
 .get-to {
     font-family: 'Georgia';
@@ -529,8 +534,13 @@ color: #545454;
     align-items: center;
     width: 349px;
     height: 43px;
-    background: #F1CDB3;
+    background:  #FDDCC4;
 border-radius: 9px;
+cursor: pointer;
+transition: 1s;
+}
+.credit-card:hover {
+    background: #F1CDB3;
 }
 .credit-card__svg {
     width: 30px;
@@ -602,7 +612,7 @@ color: #545454;
     gap:20px;
 }
 .mail-text {
-    font-family: 'Georgia';
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
