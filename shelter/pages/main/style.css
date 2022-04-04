@@ -116,7 +116,11 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    
+    color: #CDCDCD;
+    cursor: pointer;
+    transition: 1s;
+ }
+ .nonbordered:hover {
     color: #FAFAFA;
  }
  a {
@@ -355,6 +359,11 @@
      cursor: pointer;
      transition: 1s;
  }
+ .pets-slider__card:hover .button-learn{
+    background: #FFFFFF;
+    background-color:  #FDDCC4;
+
+}
  .pets-slider__card:hover {
      background-color: #FFFFFF;
  }

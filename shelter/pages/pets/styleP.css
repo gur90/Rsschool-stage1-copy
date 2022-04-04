@@ -84,8 +84,12 @@ h1 {
      cursor: pointer;
      transition: 1s;
  }
+ 
  .navigation_nonbordered {
     list-style: none;
+ }
+ .navigation_bordered:hover {
+    color: #292929;
  }
  .nonbordered {
     font-family: 'Arial';
@@ -93,8 +97,12 @@ h1 {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    
     color: #545454;
+    cursor: pointer;
+    transition: 1s;
+ }
+ .nonbordered:hover {
+    color: #292929;
  }
  a {
      text-decoration: none;
@@ -154,6 +162,11 @@ h1 {
     cursor: pointer;
     transition: 1s;
 }
+.pets-slider__card:hover .button-learn{
+    background: #FFFFFF;
+    background-color:  #FDDCC4;
+
+}
 .pets-slider__card:hover {
     background-color: #FFFFFF;
 }
@@ -189,6 +202,13 @@ h1 {
        background-color:  #FDDCC4;
     }
     /*button slider*/
+    .button-navigation {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        
+        gap: 20px;
+    }
     .button_left_left {
         display: inline-block;
         background-color: transparent;
@@ -204,13 +224,47 @@ h1 {
         background-color: transparent;
         padding: 15px 16px;
         border-radius: 100px;
+        border: 2px solid #CDCDCD;
+         width: 52px;
+        height: 52px;
+     }
+     .button_one {
+        display: inline-block;
+        background: #F1CDB3;
+        padding: 16px 16px;
+        border-radius: 100px;
+        border: 2px solid  #F1CDB3;
+         width: 52px;
+        height: 52px;
+     }
+     .button_right {
+        display: inline-block;
+        background-color: transparent;
+        padding: 15px 16px;
+        border-radius: 100px;
         border: 2px solid #F1CDB3;
          width: 52px;
         height: 52px;
-       
+        cursor: pointer;
+        transition: 1s;
      }
-
-
+     .button_right:hover {
+        background-color:  #FDDCC4;
+     }
+     .button_right_right {
+        display: inline-block;
+        background-color: transparent;
+        padding: 15px 16px;
+        border-radius: 100px;
+        border: 2px solid #F1CDB3;
+         width: 52px;
+        height: 52px;
+        cursor: pointer;
+        transition: 1s;
+     }
+     .button_right_right:hover {
+        background-color:  #FDDCC4;
+     }
     /*footer*/
     .footer {
         padding: 40px 40px 0 40px;
