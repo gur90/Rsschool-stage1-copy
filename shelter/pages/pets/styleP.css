@@ -351,19 +351,23 @@ a {
         overflow-y: auto;
     }
     .wrapper {
-        width: 708px;
+       
+        width: 100%;
     }
     .header-wrapper {
-        width: 708px;
+       padding-left: 30px;
+       padding-right: 30px;
+        width: 100%;
         position: fixed;
     }
-    .sticky {
+    /*.sticky {
         position: sticky;
         top:120px;
         bottom: 121px
-    }
+    }*/
     /*pets*/
     .pets-content {
+        width: 100%;
         padding-top: 120px;
         height: auto;
         gap:30px;
