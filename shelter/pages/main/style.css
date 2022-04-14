@@ -861,25 +861,23 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    html {
-        margin: 0 auto;
-        overflow-x: hidden;
-    }
+   
     body {
         overflow-x: hidden;
     }
     .wrapper {
-        width: 320px;
+        width: 100%;
     }
 
     /*hamburger*/
     .wrap {
         display: flex;
         flex-direction: row;
-        align-items: center;
+       justify-content: space-between;
         gap:56px;
     }
     .hamburger {
+        /*margin-right: 53px;*/
        position: relative;
        display: flex;
        flex-direction: column;
@@ -978,6 +976,9 @@
         margin-left: 10px;
         margin-right: 53px;
     }
+    .logo {
+        margin-top: 3px;
+    }
     /*.navigation {
         display: none;
     }*/
@@ -999,11 +1000,13 @@
 
     }
     .content {
-        width: 300px;
+        /*min-width: 300px;*/
+        width: 100%;
         height: auto;
         margin: 3px auto;
         gap: 45px;
         justify-content: center;
+        align-items: center;
     }
     .not-only {
         display: flex;
@@ -1014,9 +1017,9 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        width: 300px;
+        /*width: 300px;*/
         height: auto;
-       
+       width: 100%;
         letter-spacing: 0.06em;
         color: #FFFFFF;
     }
@@ -1028,7 +1031,8 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        width: 300px;
+        /*width: 300px;*/
+        width: 100%;
         height: auto;
         align-items: center;
         display: flex;
@@ -1039,7 +1043,9 @@
     .not-only_text {
         margin-left: 10px;
         margin-right: 10px;
-        width: 280px;
+        /*width: 280px;*/
+        margin: auto;
+        width: 86%;
         height: 96px;
         letter-spacing: 0.001em;
         line-height: 160%;
@@ -1047,7 +1053,8 @@
     }
     .button_primary {
         margin-top: 40px;
-    margin-left: 45px;
+    /*margin-left: 45px;*/
+    margin-left:  calc(50% - 207px/2 - 0.5px);;
      align-items: center;
      text-align: center;
     }
@@ -1056,8 +1063,10 @@
     justify-content: flex-end;
     }
     .start-puppy {
-        width: 260px;
+        /*width: 260px;*/
+        width: 80%;
         height: auto;
+        margin-right: 15px;
     }
     /*about*/
     .about {
@@ -1067,7 +1076,8 @@
     .about-content {
         margin: 0 auto;
         padding-top: 0;
-        width: 300px;
+        /*width: 300px;*/
+        width: 100%;
         height: auto;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -1075,9 +1085,9 @@
         gap: 42px;
     }
     .about_content__text {
-        
-        margin-top: 40px;
-        width: 300px;
+        width: 86%;
+        margin-top: 42px;
+        /*width: 300px;*/
     }
     .about-shelter {
         
@@ -1090,15 +1100,17 @@
         text-align: center
     }
     .about-pets {
-        width: 260px;
+        /*width: 260px;*/
+        width: 80%;
         height: auto;
-        margin: 0 auto;
+        margin: 6px auto;
         margin-bottom: 42px;
     }
     .about_text {
-        margin: 0 14px;
+        /*margin: 0 14px;*/
         margin-bottom: 0;
-       width: 270px;
+       /*width: 270px;*/
+       width: 100%;
        font-family: 'Arial';
        font-style: normal;
        font-weight: 400;
@@ -1109,9 +1121,10 @@
        text-align: justify;
     }
     .about_text_text {
-       margin: 0 14px;
+       /*margin: 0 14px;*/
        margin-bottom: 0;
-       width: 270px;
+       /*width: 270px;*/
+       width: 100%;
        font-family: 'Arial';
        font-style: normal;
        font-weight: 400;
@@ -1164,11 +1177,13 @@
 
     .help-content {
         margin: auto;
-        width: 290px;
+        /*width: 290px;*/
+        width: 100%;
     }
     .help-content__list__9 {
-        padding-top:42px;
-        width: 296px;
+        padding-top:44px;
+        /*width: 296px;*/
+        width: 92%;
         gap:30px;
         justify-content: space-between;
         padding-bottom: 42px;
@@ -1213,11 +1228,13 @@
         padding-bottom: 42px;
         flex-direction: column-reverse;
         gap: 42px;
-        width: 280px;
+        /*width: 280px;*/
+        width: 100%;
         justify-content: center;
     }
     .donetion-title {
-        width: 200px;
+        /*width: 200px;*/
+        width: 100%;
         height: 64px;
       
      
@@ -1244,14 +1261,17 @@
         letter-spacing: normal;
         white-space: nowrap;
         color: #545454;
+        text-align: center;
 
     }
     .donation-content__content {
-        width: 280px;
+        /*width: 280px;*/
         align-self: center;
     }
     .credit-card {
-        width: 281px;
+        max-width: 281px;
+        width: 90%;
+        align-self: center;
         height: 43px;
         justify-content: space-around;
         gap: 15px;
@@ -1270,17 +1290,21 @@
         color: #545454;
     }
     .legal-info {
-        width: 281px;
+        /*width: 281px;*/
+        margin: auto;
+        width: 88%;
         text-align: justify;
     }
     .credit-button {
         width: 258px;
     }
     .donation__dog {
-        width: 260px;
+        /*width: 260px;*/
+        width: 80%;
         height: auto;
-        margin-top: 0;
-       margin-left: 10px;
+        margin: 3px auto;
+       /*margin-left: 10px;*/
+    
     }
 
     /*footer*/
@@ -1307,6 +1331,7 @@
         width: 255px;
         margin: auto;
         justify-content: center;
+        gap: 40px;
     }
     .contacts-title {
         margin-top: 30px;
