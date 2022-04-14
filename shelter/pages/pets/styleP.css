@@ -345,3 +345,62 @@ a {
     letter-spacing: 0.06em;
     color: #F1CDB3;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    html {
+        overflow-y: auto;
+    }
+    .wrapper {
+        width: 708px;
+    }
+    .header-wrapper {
+        width: 708px;
+        position: fixed;
+    }
+    .sticky {
+        position: sticky;
+        top:120px;
+        bottom: 121px
+    }
+    /*pets*/
+    .pets-content {
+        padding-top: 120px;
+        height: auto;
+        gap:30px;
+    }
+    #scarlett {
+        display: none;
+    }
+    #fredie {
+        display: none;
+    }
+    .button-navigation {
+        margin-top: 10px;
+        margin-bottom: 76px;
+    }
+    /*footer*/
+
+    .footer {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .footer-content {
+        padding-top: 11px;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+        row-gap: 83px;
+    }
+    .contacts {
+        width: 278px;
+        height: 234px;
+    }
+    .locations {
+        width: 302px;
+        height: 234px;
+    }
+}
