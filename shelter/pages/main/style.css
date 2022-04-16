@@ -674,7 +674,7 @@
 @media screen and (min-width: 1280px) {
     .about-content {
         width: 100%;
-        align-items: center;
+        /*align-items: center;*/
     }
     .about_content__text {
         width: 430px;
@@ -897,24 +897,17 @@
     .hamburger {
         margin-top: 13px;
         margin-right: 53px;
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-      
-       width: 30px;
-       height: 40px;
-       cursor: pointer;
-       user-select: none;
-       z-index: 15;
-       transition: 3s;
-       
-     }
-     .hamburger:hover {
-       
-     }
-     .hamburger.open:hover {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 15;
+        transition: 3s;
        
      }
      .line {
@@ -922,7 +915,6 @@
        height: 2px;
        background:#F1CDB3;
        margin: 4px 0;
-      
        z-index: 15;
        transition: all 0.3s ease-in-out;
       
@@ -933,7 +925,6 @@
      }
      
      .hamburger.open .line2 {
-       /*opacity: 0;*/
        transform: rotate(90deg) translate(0, 0);
        
      }
@@ -950,49 +941,63 @@
        top:0;
        right: -100%;
        width: 320px;
-       height: auto;
+       height: 823px;
        background-color: black;
        overflow-x: hidden;
        transition-duration: 1s;
        z-index: 0;
+       
      }
      .header__navigation.active {
        right: 0;
        z-index: 5;
        overflow-x: hidden;
+       
      }
      .navigation {
        display: block;
        position: absolute;
-       top:20px;
+       top:248px;
        right: 0;
-       width: 100%;
-       height: 426px;
-       box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+       width: 320px;
+       height: 823px;
        transition-duration: .25s;
-      
+       text-align: center;
+     }
+     .navigation.active {
+        right: 0;
+        z-index: 5;
+        overflow-x: hidden;
+       
      }
      .link {
         display: block;
+        margin-top: 40px;
      }
      .navigation_bordered {
        display: block;
+       font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        color: #FAFAFA;
        
      }
      .navigation_nonbordered {
         display: block;
+        
      }
-     .navigation_bordered:hover {
-       filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-       contrast(87%); 
+     .nonbordered {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        color: #CDCDCD;
      }
-     .navigation_nonbordered:hover {
-        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-        contrast(87%);
-     }
-    .header {
-       
-    }
+    
+   
     .header-wrapper {
         width: 320px;
         margin-top: 0;
@@ -1000,12 +1005,12 @@
        /* margin-right: 53px;*/
     }
     .logo {
+        position: relative;
         width: 184px;
         margin-top: 3px;
+        z-index: 20;
     }
-    /*.navigation {
-        display: none;
-    }*/
+   
     .start {
         width: 100%;
         padding-top: 28px;
@@ -1421,9 +1426,11 @@
 @media screen and (max-width: 319px) {
     body {
         overflow-x: hidden;
+        margin: auto;
     }
     .wrapper {
         width: 100%;
+        
     }
 
     /*hamburger*/
@@ -1453,12 +1460,7 @@
        transition: 3s;
        
      }
-     .hamburger:hover {
-       
-     }
-     .hamburger.open:hover {
-       
-     }
+    
      .line {
        width: 30px;
        height: 2px;
@@ -1475,7 +1477,7 @@
      }
      
      .hamburger.open .line2 {
-       /*opacity: 0;*/
+       
        transform: rotate(90deg) translate(0, 0);
        
      }
@@ -1492,7 +1494,7 @@
        top:0;
        right: -100%;
        width: 320px;
-       height: auto;
+       height: 853px;
        background-color: black;
        overflow-x: hidden;
        transition-duration: 1s;
@@ -1506,35 +1508,44 @@
      .navigation {
        display: block;
        position: absolute;
-       top:20px;
+       top:248px;
        right: 0;
-       width: 100%;
-       height: 426px;
-       box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+       width: 320px;
+       height: 853px;
        transition-duration: .25s;
+       text-align: center;
       
      }
      .link {
         display: block;
+        margin-top: 40px;
+        
      }
      .navigation_bordered {
-       display: block;
-       
-     }
-     .navigation_nonbordered {
         display: block;
-     }
-     .navigation_bordered:hover {
-       filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-       contrast(87%); 
-     }
-     .navigation_nonbordered:hover {
-        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-        contrast(87%);
-     }
-    .header {
-       
-    }
+        font-family: 'Arial';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 32px;
+         line-height: 160%;
+         color: #FAFAFA;
+        
+      }
+      .navigation_nonbordered {
+         display: block;
+         
+      }
+      .nonbordered {
+         font-family: 'Arial';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 32px;
+         line-height: 160%;
+         color: #CDCDCD;
+      }
+     
+     
+    
     .header-wrapper {
         width: 320px;
         margin-top: 0;
@@ -1542,12 +1553,12 @@
        /* margin-right: 53px;*/
     }
     .logo {
+        position: relative;
         width: 184px;
         margin-top: 3px;
+        z-index: 20;
     }
-    /*.navigation {
-        display: none;
-    }*/
+   
     .start {
         width: 100%;
         padding-top: 28px;
@@ -1720,7 +1731,8 @@
     .pets-content {
         padding-bottom: 0;
         margin: 0 auto;
-        width: 300px;
+        /*width: 300px;*/
+        width: 90%;
        justify-content: space-between;
         gap: 42px;
     }
