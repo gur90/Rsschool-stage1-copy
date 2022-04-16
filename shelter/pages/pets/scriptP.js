@@ -1,4 +1,4 @@
-console.log("100");
+
 const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.header__navigation');
 const navigationNonbordered = document.querySelector('.navigation_nonbordered');

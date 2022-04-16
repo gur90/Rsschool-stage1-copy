@@ -355,16 +355,13 @@ a {
         width: 100%;
     }
     .header-wrapper {
-       padding-left: 30px;
-       padding-right: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
         width: 100%;
         position: fixed;
+        background: #FFFFFF;
     }
-    /*.sticky {
-        position: sticky;
-        top:120px;
-        bottom: 121px
-    }*/
+   
     /*pets*/
     .pets-content {
         width: 100%;
@@ -417,30 +414,32 @@ a {
     }
 
     /*header*/
+
     .wrap {
+        position: fixed;
         margin: auto;
         width: 100%;
         display: flex;
         flex-direction: row;
        justify-content: space-between;
+       background: #FFFFFF;
        /*align-items: baseline*/
         /*gap:43px;*/
     }
     .hamburger {
         margin-top: 40px;
         margin-right: 52px;
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       width: 30px;
-       height: 40px;
-       cursor: pointer;
-       user-select: none;
-       z-index: 15;
-       transition: 3s;
-       
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 15;
+        transition: 3s;
      }
      .line {
        width: 30px;
@@ -510,7 +509,6 @@ a {
         font-size: 32px;
         line-height: 160%;
         color: #292929;
-        
       }
       .navigation_nonbordered {
          display: block;
@@ -538,13 +536,16 @@ a {
          margin-top: 3px;
          z-index: 20;
      }
+
+
      /*pets*/
 
      .pets-content {
          gap: 42px;
+         padding-top: 120px;
      }
      .about-pets_box {
-      margin-top: 42px;
+        margin-top: 42px;
      }
      .about-pets_content {
         font-size: 25px;
@@ -555,19 +556,19 @@ a {
      .pets-cards:nth-child(5) {
         display: none;
     }
-    #sophia  {
+     #sophia  {
         display: none;
     }
-    #timmy {
+     #timmy {
         display: none;
     }
-    #charly {
+     #charly {
         display: none;
     }
-    #scarlett {
+     #scarlett {
         display: none;
     }
-    #fredie {
+     #fredie {
         display: none;
     }
     .button-navigation {
@@ -577,6 +578,7 @@ a {
         justify-content: center;
     }
      /*footer*/
+
     .footer {
         overflow-y: hidden;
         width: 100%;
@@ -584,7 +586,6 @@ a {
         padding: 0;
         background-size: cover;
         background-repeat: no-repeat;
-
     }
     .footer-content {
         margin: auto;
@@ -617,9 +618,6 @@ a {
         
         text-align: center;
         letter-spacing: 0.06em;
-
-        /* color-light-xl */
-
         color: #FFFFFF;
     }
     .email {
@@ -635,8 +633,6 @@ a {
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* identical to box height, or 23px */
-
         letter-spacing: 0.06em;
     }
     .locations {
@@ -654,8 +650,6 @@ a {
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* or 23px */
-        
         letter-spacing: 0.06em;
     }
     .puppy {
@@ -667,12 +661,16 @@ a {
 @media screen and (max-width: 319px) {
     body {
         overflow-x: hidden;
+        margin: auto;
     }
     .wrapper {
         width: 100%;
+        margin: auto;
     }
 
     /*header*/
+
+
     .wrap {
         margin: auto;
         width: 100%;
@@ -685,18 +683,17 @@ a {
     .hamburger {
         margin-top: 40px;
         margin-right: 52px;
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       width: 30px;
-       height: 40px;
-       cursor: pointer;
-       user-select: none;
-       z-index: 15;
-       transition: 3s;
-       
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 15;
+        transition: 3s;
      }
     
      .line {
@@ -761,11 +758,9 @@ a {
         font-size: 32px;
         line-height: 160%;
         color: #292929;
-        
       }
       .navigation_nonbordered {
          display: block;
-         
       }
       .nonbordered {
         font-family: 'Arial';
@@ -808,7 +803,7 @@ a {
         color: #545454;
      }
     
-     .pets-cards{
+    .pets-cards{
         width: 100%;
     }
     .katrine {
@@ -837,6 +832,7 @@ a {
         justify-content: center;
     }
      /*footer*/
+
     .footer {
         overflow-y: hidden;
         width: 100%;
@@ -867,7 +863,6 @@ a {
         margin-top: 30px;
     }
     .contacts-title-text {
-       
         /*width: 278px;*/
         width: 80%;
         font-family: 'Georgia';
@@ -875,12 +870,8 @@ a {
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        
         text-align: center;
         letter-spacing: 0.06em;
-
-        /* color-light-xl */
-
         color: #FFFFFF;
     }
     .email {
@@ -889,7 +880,7 @@ a {
     }
     .phone {
         justify-content: space-between;
-        gap: 2px
+        gap: 2pxж
     }
     .tel-number {
         font-family: 'Georgia';
@@ -897,8 +888,6 @@ a {
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* identical to box height, or 23px */
-
         letter-spacing: 0.06em;
     }
     .locations {
@@ -917,8 +906,6 @@ a {
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* or 23px */
-        
         letter-spacing: 0.06em;
     }
     .puppy {

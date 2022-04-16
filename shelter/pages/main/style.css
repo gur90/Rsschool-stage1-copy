@@ -671,6 +671,7 @@
 }
 
 /*media*/
+
 @media screen and (min-width: 1280px) {
     .about-content {
         width: 100%;
@@ -705,7 +706,6 @@
     }
     .start-screen-content {
         padding-bottom: 0;
-    
     }
     .content-2 {
         width: 100%;
@@ -720,14 +720,12 @@
         margin-bottom: 41px;
     }
     .button_primary {
-     margin-left: 126px;
-     margin-top: 42px;
-     
-     
+        margin-left: 126px;
+        margin-top: 42px;
     }
     .start-screen-puppy {
         display: flex;
-    justify-content: flex-end;
+        justify-content: flex-end;
     }
     .start-puppy {
         margin-right: 30px;
@@ -747,7 +745,6 @@
         height: 868px;*/
         width: 100%;
         height: 100%;
-
         flex-direction: column-reverse;
         justify-content: space-between;
         gap: 80px;
@@ -756,7 +753,6 @@
         /*width: 437px;*/
         width: 100%;
         margin-top: 78px;
-       
         align-items: center;
         /*justify-content: start;*/
     }
@@ -770,7 +766,6 @@
         width: 56%;
         padding-top: 0;
         text-align: start;
-        
     }
     .about-pets {
         margin: 0 auto;
@@ -778,6 +773,7 @@
     }
 
     /*pets*/
+
     .pets {
         width: 100%;
         height: auto;
@@ -793,6 +789,7 @@
     #woody {
         display: none;
     }
+
     /*help*/
 
     .help {
@@ -828,6 +825,7 @@
         height: 113px;
     }
     /*donation*/
+
     .donation {
         width: 100%;
         height: auto;
@@ -885,6 +883,7 @@
     }
 
     /*hamburger*/
+
     .wrap {
         margin: auto;
         width: 100%;
@@ -917,7 +916,6 @@
        margin: 4px 0;
        z-index: 15;
        transition: all 0.3s ease-in-out;
-      
      }
      
      .hamburger.open .line1 {
@@ -975,8 +973,8 @@
         margin-top: 40px;
      }
      .navigation_bordered {
-       display: block;
-       font-family: 'Arial';
+        display: block;
+        font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
@@ -986,7 +984,6 @@
      }
      .navigation_nonbordered {
         display: block;
-        
      }
      .nonbordered {
         font-family: 'Arial';
@@ -1026,7 +1023,6 @@
     .content-2 {
         flex-direction: column;
         gap: 105px;
-
     }
     .content {
         /*min-width: 300px;*/
@@ -1048,13 +1044,12 @@
         line-height: 130%;
         /*width: 300px;*/
         height: auto;
-       width: 100%;
+        width: 100%;
         letter-spacing: 0.06em;
         color: #FFFFFF;
     }
     .not-only-two {
         margin-bottom: 40px;
-       
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
@@ -1082,14 +1077,14 @@
     }
     .button_primary {
         margin-top: 40px;
-    /*margin-left: 45px;*/
-    margin-left:  calc(50% - 207px/2 - 0.5px);;
-     align-items: center;
-     text-align: center;
+        /*margin-left: 45px;*/
+        margin-left:  calc(50% - 207px/2 - 0.5px);;
+        align-items: center;
+        text-align: center;
     }
     .start-screen-puppy {
         display: flex;
-    justify-content: flex-end;
+        justify-content: flex-end;
     }
     .start-puppy {
         /*width: 260px;*/
@@ -1119,7 +1114,6 @@
         /*width: 300px;*/
     }
     .about-shelter {
-        
         width: 100%;
         height: auto;
         padding-top: 0;
@@ -1165,6 +1159,7 @@
     }
 
     /*pets*/
+
     #jennifer {
         display: none;
     }
@@ -1228,20 +1223,15 @@
     }
     .help-text {
         font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 110%;
-    /* identical to box height, or 17px */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    /* color-dark-l */
-
-    color: #545454;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #545454;
 
     }
 
@@ -1265,8 +1255,6 @@
         /*width: 200px;*/
         width: 100%;
         height: 64px;
-      
-     
     }
   
     .donation-title_text {
@@ -1333,7 +1321,6 @@
         height: auto;
         margin: 3px auto;
        /*margin-left: 10px;*/
-    
     }
 
     /*footer*/
@@ -1344,7 +1331,6 @@
         padding: 0;
         background-size: cover;
         background-repeat: no-repeat;
-
     }
     .footer-content {
         margin: auto;
@@ -1366,19 +1352,14 @@
         margin-top: 30px;
     }
     .contacts-title-text {
-       
         width: 278px;
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        
         text-align: center;
         letter-spacing: 0.06em;
-
-        /* color-light-xl */
-
         color: #FFFFFF;
     }
     .email {
@@ -1394,14 +1375,11 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* identical to box height, or 23px */
-
         letter-spacing: 0.06em;
     }
     .locations {
         width: 300px;
-        margin: auto;
-        
+        margin: auto;  
     }
     .location {
         margin-top: 5px;
@@ -1413,8 +1391,6 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* or 23px */
-        
         letter-spacing: 0.06em;
     }
     .puppy {
@@ -1430,35 +1406,33 @@
     }
     .wrapper {
         width: 100%;
-        
     }
 
     /*hamburger*/
+
     .wrap {
         margin: auto;
         width: 100%;
         display: flex;
         flex-direction: row;
-       justify-content: space-between;
+        justify-content: space-between;
        /*align-items: baseline*/
         /*gap:43px;*/
     }
     .hamburger {
         margin-top: 13px;
         margin-right: 53px;
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-      
-       width: 30px;
-       height: 40px;
-       cursor: pointer;
-       user-select: none;
-       z-index: 15;
-       transition: 3s;
-       
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 40px;
+        cursor: pointer;
+        user-select: none;
+        z-index: 15;
+        transition: 3s;
      }
     
      .line {
@@ -1466,7 +1440,6 @@
        height: 2px;
        background:#F1CDB3;
        margin: 4px 0;
-      
        z-index: 15;
        transition: all 0.3s ease-in-out;
       
@@ -1477,9 +1450,7 @@
      }
      
      .hamburger.open .line2 {
-       
        transform: rotate(90deg) translate(0, 0);
-       
      }
      
      .hamburger.open .line3 {
@@ -1514,12 +1485,10 @@
        height: 853px;
        transition-duration: .25s;
        text-align: center;
-      
      }
      .link {
         display: block;
         margin-top: 40px;
-        
      }
      .navigation_bordered {
         display: block;
@@ -1529,7 +1498,6 @@
          font-size: 32px;
          line-height: 160%;
          color: #FAFAFA;
-        
       }
       .navigation_nonbordered {
          display: block;
@@ -1545,7 +1513,6 @@
       }
      
      
-    
     .header-wrapper {
         width: 320px;
         margin-top: 0;
@@ -1569,12 +1536,10 @@
     }
     .start-screen-content {
         padding-bottom: 0;
-    
     }
     .content-2 {
         flex-direction: column;
         gap: 105px;
-
     }
     .content {
         /*min-width: 300px;*/
@@ -1602,7 +1567,6 @@
     }
     .not-only-two {
         margin-bottom: 40px;
-       
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
@@ -1630,14 +1594,14 @@
     }
     .button_primary {
         margin-top: 40px;
-    /*margin-left: 45px;*/
-    margin-left:  calc(50% - 207px/2 - 0.5px);;
-     align-items: center;
-     text-align: center;
+        /*margin-left: 45px;*/
+        margin-left:  calc(50% - 207px/2 - 0.5px);;
+        align-items: center;
+        text-align: center;
     }
     .start-screen-puppy {
         display: flex;
-    justify-content: flex-end;
+        justify-content: flex-end;
     }
     .start-puppy {
         /*width: 260px;*/
@@ -1777,21 +1741,15 @@
     }
     .help-text {
         font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 110%;
-    /* identical to box height, or 17px */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    /* color-dark-l */
-
-    color: #545454;
-
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #545454;
     }
 
     /*donation*/
@@ -1814,8 +1772,6 @@
         /*width: 200px;*/
         width: 100%;
         height: 64px;
-      
-     
     }
   
     .donation-title_text {
@@ -1840,7 +1796,6 @@
         white-space: nowrap;
         color: #545454;
         text-align: center;
-
     }
     .donation-content__content {
         /*width: 280px;*/
@@ -1882,7 +1837,6 @@
         height: auto;
         margin: 3px auto;
        /*margin-left: 10px;*/
-    
     }
 
     /*footer*/
@@ -1893,7 +1847,6 @@
         padding: 0;
         background-size: cover;
         background-repeat: no-repeat;
-
     }
     .footer-content {
         margin: auto;
@@ -1916,7 +1869,6 @@
         margin-top: 30px;
     }
     .contacts-title-text {
-       
         /*width: 278px;*/
         width: 80%;
         font-family: 'Georgia';
@@ -1924,12 +1876,8 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 130%;
-        
         text-align: center;
         letter-spacing: 0.06em;
-
-        /* color-light-xl */
-
         color: #FFFFFF;
     }
     .email {
@@ -1946,15 +1894,12 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* identical to box height, or 23px */
-
         letter-spacing: 0.06em;
     }
     .locations {
         /*width: 300px;*/
         width: 100%;
         margin: auto;
-        
     }
     .location {
         margin-top: 5px;
@@ -1966,8 +1911,6 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        /* or 23px */
-        
         letter-spacing: 0.06em;
     }
     .puppy {
