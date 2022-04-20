@@ -915,7 +915,7 @@
        background:#F1CDB3;
        margin: 4px 0;
        z-index: 15;
-       transition: all 0.3s ease-in-out;
+       transition: all 0.5s ease-in-out;
      }
      
      .hamburger.open .line1 {
@@ -939,7 +939,7 @@
        top:0;
        right: -100%;
        width: 320px;
-       height: 823px;
+       height: 100%;
        background-color: black;
        overflow-x: hidden;
        transition-duration: 1s;
@@ -950,23 +950,31 @@
        right: 0;
        z-index: 5;
        overflow-x: hidden;
+       overflow-y: hidden;
+       
+      
        
      }
      .navigation {
        display: block;
        position: absolute;
-       top:248px;
+       top:200px;
        right: 0;
        width: 320px;
-       height: 823px;
+       height: 100%;
        transition-duration: .25s;
        text-align: center;
+       overflow-y: hidden;
      }
      .navigation.active {
         right: 0;
         z-index: 5;
         overflow-x: hidden;
+        overflow-y: hidden;
        
+     }
+     .body.nonactive {
+         overflow-y: hidden;
      }
      .link {
         display: block;
@@ -1016,6 +1024,10 @@
         background-image: url("../../assets/images/start-screen-gradient-background320.png");
         background-size: cover;
     }
+    .start.active {
+       filter: brightness(60%); 
+    }
+    
     .start-screen-content {
         padding-bottom: 0;
     
