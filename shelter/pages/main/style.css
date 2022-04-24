@@ -344,11 +344,8 @@ background-color: #FDDCC4;
     width:351px;
     height: 362px;
 }
-.modal-pet:hover .close-popup{
-    background-color: none;
-}
-.modal-text:hover .close-popup {
-    background-color: ;
+.modal-content:hover .close-popup {
+    background-color: transparent;
 }
 .name {
     margin-top: 0;
@@ -420,6 +417,8 @@ span {
 li {
     list-style: #F1CDB3;
 }
+
+
 .pets {
  
     height: 877px;
@@ -487,17 +486,49 @@ li {
      align-items: center;
      gap:55px
  }
+ .pets-c {
+    width:990px;
+    overflow: hidden;
+ }
  .pets-cards {
-    
-   
+    /*width:990px;*/
+   position: relative;
+    left: 0px;
      display: flex;
-     /*justify-content: space-between;*/
-     justify-content: center;
-     align-items: center;
+     /*overflow: hidden;*/
+     justify-content: space-between;
+     /*justify-content: center;
+     align-items: center;*/
      gap: 90px;
+    
      
  }
+ .trans-right {
+    animation:  spin-right 5s ease-out
+ }
+ @keyframes spin-right {
+    from {
+      left: 0px;
+    }
+    to {
+     left:-990px;
+    }
+  }
+ .left {
+     left:0
+ }
+ .right {
+    left: calc((-100% - calc((100% - 3*270px)/2))*2);
+ }
+ .slider {
+    margin-right: calc(100% - 2*270px);
+    left: calc(-100% - calc(100% - 2*270px));
+  }
+ /*.pets-cards div:nth-child(n+4) {
+     display: none;
+ }*/
  .pets-slider__card {
+     
      height: 435px;
      display: flex;
      flex-direction: column;
@@ -935,15 +966,21 @@ li {
         margin: 0 auto;
         background-size: cover;
     }
+    .pets-cards {
+        width: 100%;
+    }
     .pets-slider {
         gap: 12px;
     }
     .pets-cards {
         gap: 40px;
     }
-    #woody {
+    .pets-cards div:nth-child(n+3) {
         display: none;
     }
+    /*#woody {
+        display: none;
+    }*/
 
     /*help*/
 
@@ -1105,7 +1142,7 @@ li {
        right: 0;
        z-index: 5;
        overflow-x: hidden;
-       overflow-y: hidden;
+       /*overflow-y: hidden;*/
        
       
        
@@ -1327,13 +1364,19 @@ li {
     }
 
     /*pets*/
-
-    #jennifer {
+    .pets-cards {
+        width: 90%;
+      
+    }
+    .pets-cards div:nth-child(n+2) {
+        display: none;
+    }
+    /*#jennifer {
         display: none;
     }
     #woody {
         display: none;
-    }
+    }*/
     .pets {
         height: 791px;
     }
