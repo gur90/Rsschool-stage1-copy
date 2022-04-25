@@ -37,21 +37,40 @@
         </div>
     </header>
     <main class="main">
+        <div class="popup-wrapper">
+            <div class="popup-content">
+                <button class="close-popup"></button>
+                <div class="modal-content">
+                    <img class="modal-pet"></img>
+                    <div class="modal-text">
+                        <p class="name"></p>
+                        <span class="type"></span>-<span class="breed"></span>
+                        <p class="description"></p>
+                        <ul class="modal-ul">
+                            <li class="modal-li">Age: <span class="age"></span></li>
+                            <li class="modal-li">Inoculations: <span class="inoculations"></span></li>
+                            <li class="modal-li">Diseases: <span class="diseases"></span></li>
+                            <li class="modal-li">Parasites: <span class="parasites"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="wrapper">
             <div class="pets-content">
             <div class="about-pets_box"><h2 class="about-pets_content">Our friends who</h2><h2 class="about-pets_content">are looking for a house</h2></div>
             <div class="pets-cards">
-                <div class="pets-slider__card">
+                <div class="pets-slider__card" id="katrine">
                     <img class="katrine" src="../../assets/images/pets-katrine.png" alt="Katrine">
                     <p class="card-name">Katrine</p>
                     <button class="button-learn">Learn more</button>
                 </div>
-                <div class="pets-slider__card">
+                <div class="pets-slider__card" id="jennifer">
                     <img class="katrine" src="../../assets/images/pets-jennifer.jpg" alt="Katrine">
                     <p class="card-name">Jennifer</p>
-                    <button class="button-learn">Learn more</button>
+                    <button class="button-learn"id="jen">Learn more</button>
                 </div>
-                <div class="pets-slider__card">
+                <div class="pets-slider__card" id="woody">
                     <img class="katrine" src="../../assets/images/pets-woody.png" alt="Katrine">
                     <p class="card-name">Woody</p>
                     <button class="button-learn">Learn more</button>

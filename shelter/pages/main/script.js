@@ -88,7 +88,7 @@ function closeMenu() {
     openPop()
    look()
   }
-  cardPet.addEventListener('click',getData )
+  /*cardPet.addEventListener('click',getData )
   
   function look() {
     if (cardname.innerHTML === 'Katrine') {
@@ -125,13 +125,10 @@ function closeMenu() {
       img.src = woody.img;
     }
 
-}
+}*/
 
 
- 
-
-
-  let jennifer = 
+ let jenifer = 
   {
     "name": "Jennifer",
     "img":  "../../assets/images/pets-jennifer.png",
@@ -145,7 +142,7 @@ function closeMenu() {
   }
 
 
-  /*function lookInfojen () {
+  function lookInfo () {
       age.innerHTML = jenifer.age;
       nam.innerHTML = jenifer.name;
       type.innerHTML = jenifer.type;
@@ -155,9 +152,9 @@ function closeMenu() {
       diseases.innerHTML = jenifer.diseases;
       parasites.innerHTML = jenifer.parasites;
      img.src = jenifer.img;
-  }*/
+  }
   /*buttons.addEventListener('click', lookInfo)*/
-  /*jen.addEventListener('click', lookInfojen)*/
+  jen.addEventListener('click', lookInfo)
 
   let katrine = {
     "name": "Katrine",
@@ -170,7 +167,7 @@ function closeMenu() {
     "diseases": ["none"],
     "parasites": ["none"]
   }
-  /*function lookInfoK () {
+  function lookInfoK () {
     age.innerHTML = katrine.age;
     nam.innerHTML = katrine.name;
     type.innerHTML = katrine.type;
@@ -182,7 +179,7 @@ function closeMenu() {
    img.src = katrine.img;
 }
 
-buttonK.addEventListener('click', lookInfoK)*/
+buttonK.addEventListener('click', lookInfoK)
 
 let woody = {
     "name": "Woody",
@@ -195,7 +192,7 @@ let woody = {
     "diseases": ["right back leg mobility reduced"],
     "parasites": ["none"]
   }
-  /*function lookInfoW () {
+  function lookInfoW () {
     age.innerHTML = woody.age;
     nam.innerHTML = woody.name;
     type.innerHTML = woody.type;
@@ -207,7 +204,7 @@ let woody = {
    img.src = woody.img;
 }
 
-buttonW.addEventListener('click', lookInfoW)*/
+buttonW.addEventListener('click', lookInfoW)
 let scarlett = {
     "name": "Scarlett",
     "img": "../../assets/images/pets-scarlett.png",
@@ -282,7 +279,7 @@ let freddie= {
 buttonF.addEventListener('click', lookInfoF)
 let charly = {
     "name": "Charly",
-    "img": "../../assets/images/pets-charly.png",
+    "img": "../../assets/images/pets-charly.jpg",
     "type": "Dog",
     "breed": "Jack Russell Terrier",
     "description": "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
@@ -303,7 +300,7 @@ let charly = {
    img.src = charly.img;
 }
 
-buttonF.addEventListener('click', lookInfoF)
+buttonC.addEventListener('click', lookInfoC)
 let sophia = {
     "name": "Sophia",
     "img": "../../assets/images/pets-sofia.png",
@@ -337,7 +334,7 @@ let btnLeft = document.querySelector('.button_left')
 let cardname = document.querySelector('.card-name')
 let imgname = document.querySelector('.katrine')
 let card = document.querySelectorAll('.pets-slider__card')
-let cards = document.querySelectorAll('.pets-cards')
+let cards = document.querySelector('.pets-cards')
 
  pets = [
     {
@@ -430,8 +427,10 @@ let cards = document.querySelectorAll('.pets-cards')
     }
 ]
 
-
-
+function left () {
+    cards.classList.add('trans-right')
+}
+btnLeft.addEventListener('click', left)
 class Petcard {
     constructor({name,img, }) {
         this.name=name;
@@ -450,6 +449,7 @@ class Petcard {
     }
 
 }
+
 const generateCards = (pet) => {
     let cards = [];
     pet.forEach((card) => {
@@ -483,7 +483,7 @@ function moveBy(direction ) {
 }
 
 
-btnLeft.addEventListener('click', changeCard )
+/*btnLeft.addEventListener('click', changeCard )
 function changeCard () {
     
     const randomNum = Math.floor(Math.random()*pets.length);
@@ -493,7 +493,7 @@ function changeCard () {
     cardname.innerHTML = naming
     imgname.src = imging
      
-    }
+    }*/
 
 
 
