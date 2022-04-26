@@ -30,6 +30,20 @@
  .body.nonactive {
      overflow-y: hidden;
  }
+ 
+  .dark  {
+      display: block;
+      position: fixed;
+      display: none;
+      overflow: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(41, 41, 41, 0.6);
+      z-index: 1;
+      min-height: 100%;
+  }
  .wrapper {
      max-width: 1200px;
      margin:0 auto;
@@ -272,7 +286,7 @@
 
  /*pets*/
  .popup-wrapper {
-     position: fixed;
+   position: fixed;
      top:0;
      left: 0;
      width: 100%;
@@ -283,15 +297,18 @@
      transition: 0.5s all;
  }
  .popup-wrapper.active {
+   
      opacity: 1;
      pointer-events: all;
      transition: 0.5s all;
+     z-index: 4;
  }
 .popup-wrapper.active:hover .close-popup {
     background-color: #FDDCC4;;
 }
 .popup-content {
-    position: absolute;
+  
+    position: relative;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%) scale(0);
@@ -301,6 +318,7 @@
     display: flex;
     transition: 0.5s all;
     cursor: pointer;
+    
 }
 /*.popup-content:hover .close-popup{
 background-color: #FDDCC4;
@@ -308,6 +326,7 @@ background-color: #FDDCC4;
 .popup-content.active {
     transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
+    z-index: 3;
 }
 .close-popup {
     position: absolute;
@@ -491,51 +510,74 @@ li {
     overflow: hidden;
  }
  .pets-cards {
-    /*width:990px;*/
+    display: flex;
+    width:990px;
    /*position: relative;*/
-    left: 0px;
-     display: flex;
-     /*overflow: hidden;*/
+    /*left: 0px;
+     display: flex;*/
+     overflow: hidden;
      justify-content: space-between;
-     /*justify-content: center;
-     align-items: center;*/
+     justify-content: center;
+     align-items: center;
      gap: 90px;
      animation-fill-mode: forwards;
      
  }
- /*.trans-right {
-    animation:  spin-right 5s ease-out;
-    animation-fill-mode: both;	
- }
 
- @keyframes spin-right {
+ .from-right {
+    animation-name: left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .from-left {
+    animation-name: right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes left {
     from {
-      left: 0px;
+      right:0;
     }
     to {
-     left:-1100px;
+      right: 100%;
     }
-}
-    @keyframes spin-right-right {
-from {left: -1100px}
-to {left:-2200px}
-    }*/
- 
- /*.left {
-     left:0
- }
- .right {
-    left: calc((-100% - calc((100% - 3*270px)/2))*2);
- }
- .slider {
-    margin-right: calc(100% - 2*270px);
-    left: calc(-100% - calc(100% - 2*270px));
-  }*/
- /*.pets-cards div:nth-child(n+4) {
-     display: none;
- }*/
- .pets-slider__card {
-     
+  }
+  
+  @keyframes right {
+    from {
+      right: 100%;
+    }
+    to {
+      right: 0%;
+    }
+  }
+ .slider-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:90px;
+    position: relative;
+    width: 100%;
+    background-color: #f6f6f6;
+  }
+  
+  .pet-slider__card{
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    background: #FAFAFA;
+    cursor: pointer;
+    transition: 1s;
+    animation: 1s ease-in-out;
+  }
+ .pet-slider__item {
      height: 435px;
      display: flex;
      flex-direction: column;
@@ -544,7 +586,9 @@ to {left:-2200px}
      background: #FAFAFA;
      cursor: pointer;
      transition: 1s;
+     animation: 1s ease-in-out;
  }
+
  .pets-slider__card:hover .button-learn{
     background: #FFFFFF;
     background-color:  #FDDCC4;
@@ -1008,9 +1052,9 @@ to {left:-2200px}
     .pets-cards {
         gap: 40px;
     }
-    .pets-cards div:nth-child(n+3) {
+    /*.pets-cards div:nth-child(n+3) {
         display: none;
-    }
+    }*/
     /*#woody {
         display: none;
     }*/
@@ -1249,9 +1293,9 @@ to {left:-2200px}
         background-image: url("../../assets/images/start-screen-gradient-background320.png");
         background-size: cover;
     }
-    .start.active {
+    /*.start.active {
        filter: brightness(60%); 
-    }
+    }*/
     
     
     .start-screen-content {
@@ -1412,9 +1456,14 @@ to {left:-2200px}
     .modal-text {
         text-align: center;
         width: auto;
+        text-align: justify;
     }
     .modal-ul {
         gap:6px;
+        text-align: start
+    }
+    .modal-li {
+        text-align: start;
     }
     .description {
         font-size: 13px;
@@ -1970,11 +2019,16 @@ to {left:-2200px}
     }
     .modal-ul {
         gap:6px;
+        text-align: start;
+    }
+    .modal-li {
+        text-align: start
     }
     .description {
         font-size: 13px;
         margin-top: 20px;
         margin-bottom: 20px;
+        text-align: justify;
     }
     .pets-c {
         width: 100%;
