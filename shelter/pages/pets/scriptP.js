@@ -27,26 +27,28 @@ const body = document.querySelector('.body')
 const wind = document.querySelector('.pets-content')
 const wrap = document.querySelector('.header-wrapper')
 const foot = document.querySelector('.footer')
-
+const darkS = document.querySelector('.dark');
 function toggleMenu() {
+    darkS.style.display = 'block';
   hamburger.classList.toggle('open');
   navigation.classList.toggle('active');
   navigationNonbordered.classList.toggle('active');
-  /*body.classList.toggle('nonactive')*/
-  background.classList.toggle('active');
-  foot.classList.toggle('active')
+  body.classList.toggle('nonactive')
+  //background.classList.toggle('active');
+ foot.classList.toggle('active')
 }
 hamburger.addEventListener('click', toggleMenu);
 
 function closeMenu() {
+    darkS.style.display = 'none';
         hamburger.classList.remove('open');
         navigation.classList.remove('active');
         navigationNonbordered.classList.remove('active');
-        background.classList.remove('active');
+        //background.classList.remove('active');
         foot.classList.remove('active')
-        /*body.classList.remove('nonactive');*/
+        body.classList.remove('nonactive');
     }
-  
+    darkS.addEventListener('click', closeMenu)
   navigation.addEventListener('click', closeMenu);
   wind.addEventListener('click', closeMenu)
   wrap.addEventListener('click', closeMenu)
@@ -115,46 +117,7 @@ function closeMenu() {
     openPop()
    look()
   }
-  /*cardPet.addEventListener('click',getData )
-  
-  function look() {
-    if (cardname.innerHTML === 'Katrine') {
-       age.innerHTML = katrine.age;
-       nam.innerHTML = katrine.name;
-       type.innerHTML = katrine.type;
-       breed.innerHTML = katrine.breed;
-       description.innerHTML = katrine.description;
-       inoculations.innerHTML = katrine.inoculations;
-       diseases.innerHTML = katrine.diseases;
-       parasites.innerHTML = katrine.parasites;
-      img.src = katrine.img;
-      console.log(cardname.innerHTML)
-    } else if (cardname.innerHTML === 'Jennifer') {
-       age.innerHTML = jennifer.age;
-     nam.innerHTML = jennifer.name;
-     type.innerHTML = jennifer.type;
-     breed.innerHTML = jennifer.breed;
-     description.innerHTML = jennifer.description;
-     inoculations.innerHTML = jennifer.inoculations;
-     diseases.innerHTML = jennifer.diseases;
-     parasites.innerHTML = jennifer.parasites;
-    img.src = jennifer.img;
-    console.log(cardname.innerHTML)
-    } else if (cardname.innerHTML === 'Woody') {
-       age.innerHTML = woody.age;
-       nam.innerHTML = woody.name;
-       type.innerHTML = woody.type;
-       breed.innerHTML = woody.breed;
-       description.innerHTML = woody.description;
-       inoculations.innerHTML = woody.inoculations;
-       diseases.innerHTML = woody.diseases;
-       parasites.innerHTML = woody.parasites;
-      img.src = woody.img;
-    }
-
-}*/
-
-
+ 
  let jenifer = 
   {
     "name": "Jennifer",
