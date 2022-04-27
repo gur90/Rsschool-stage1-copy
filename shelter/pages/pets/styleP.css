@@ -299,6 +299,57 @@ li {
    letter-spacing: 0.06em;
    color: #545454;
 }
+.pets-slider {
+    
+    height: 435px;
+     display: flex;
+     flex-direction: row;
+     /*justify-content: space-between;*/
+     justify-content: center;
+     align-items: center;
+     gap:55px
+ }
+ .from-right {
+    animation-name: left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .from-left {
+    animation-name: right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes left {
+    from {
+      right:0;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      right: 100%;
+    }
+    to {
+      right: 0%;
+    }
+  }
+ .slider-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap:90px;
+    position: relative;
+    width: 100%;
+    background-color: #f6f6f6;
+  }
 .pets-cards {
     display: flex;
     justify-content: center;
@@ -317,6 +368,18 @@ li {
     cursor: pointer;
     transition: 1s;
 }
+
+ .pet-slider__item {
+     height: 435px;
+     display: flex;
+     flex-direction: column;
+     gap:30px;
+     align-items: center;
+     background: #FAFAFA;
+     cursor: pointer;
+     transition: 1s;
+     animation: 1s ease-in-out;
+ }
 .pets-slider__card:hover .button-learn{
     background: #FFFFFF;
     background-color:  #FDDCC4;
@@ -693,6 +756,7 @@ li {
         transition-duration: .25s;
         text-align: center;
         overflow-y: hidden;
+        
       }
       .navigation.active {
         right: 0;
@@ -762,7 +826,8 @@ li {
        display: none;
     }
     .modal-text {
-        text-align: center;
+        padding: 5px 5px;
+        text-align: justify;
         width: auto;
     }
     .modal-ul {
@@ -1040,7 +1105,8 @@ li {
        display: none;
     }
     .modal-text {
-        text-align: center;
+        padding: 5px 5px;
+        text-align: justify;
         width: auto;
     }
     .modal-ul {
