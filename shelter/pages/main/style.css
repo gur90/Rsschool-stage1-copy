@@ -1454,7 +1454,7 @@ li {
        display: none;
     }
     .modal-text {
-        text-align: center;
+        padding: 5px 5px;
         width: auto;
         text-align: justify;
     }
@@ -2014,7 +2014,8 @@ li {
        display: none;
     }
     .modal-text {
-        text-align: center;
+        padding: 5px 5px;
+        text-align:justify;
         width: auto;
     }
     .modal-ul {
