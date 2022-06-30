@@ -1,7 +1,7 @@
 import './sources.css';
-
+import { Source} from '../../types/interfaces'
 class Sources {
-    draw(data) {
+    draw(data: Source) {
         const fragment = document.createDocumentFragment();
         const sourceItemTemp = document.querySelector('#sourceItemTemp');
 
@@ -12,6 +12,7 @@ class Sources {
             sourceClone.querySelector('.source__item').setAttribute('data-source-id', item.id);
 
             fragment.append(sourceClone);
+           
         });
 
         document.querySelector('.sources').append(fragment);
