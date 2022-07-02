@@ -2,7 +2,7 @@ import {Api} from '../../types/interfaces'
 type Option = Record<string, string>
 class Loader {
     baseLink: string
-    options: {apiKey?: string} | object 
+    options: {apiKey?: string} 
     constructor(baseLink: string, options:  {apiKey?: string}) {
         this.baseLink = baseLink;
         this.options = options;
@@ -27,7 +27,7 @@ class Loader {
         return res;
     }
 
-    makeUrl(options: Option, endpoint: string) {
+    private makeUrl(options: Record<string, string>, endpoint= '') {
         const urlOptions = { ...this.options, ...options };
         let url = `${this.baseLink}${endpoint}?`;
 
@@ -38,7 +38,7 @@ class Loader {
         return url.slice(0, -1);
     }
 
-    load(method, endpoint: string, callback:<T>, options = {}) {
+    load(method: 'GET' | 'POST', endpoint: string, callback: (data: JSON)=>void,options ={}): void {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())
