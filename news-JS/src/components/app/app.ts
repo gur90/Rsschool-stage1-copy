@@ -2,7 +2,7 @@ import AppController from '../../components/controller/controller';
 import { AppView } from '../../components/view/appView';
 
 class App {
-    controller = AppController
+    controller = AppController;
      view = AppView
     
     constructor() {
