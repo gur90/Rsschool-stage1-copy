@@ -1,15 +1,19 @@
+import {Api} from '../../types/interfaces'
+type Option = Record<string, string>
 class Loader {
-    constructor(baseLink, options) {
+    baseLink: string
+    options: {apiKey?: string} | object 
+    constructor(baseLink: string, options:  {apiKey?: string}) {
         this.baseLink = baseLink;
         this.options = options;
     }
 
-    getResp(
-        { endpoint, options = {} },
+    getResp <T>(
+        { endpoint, options = {} }: {endpoint:string, options?: Record<string, string>},
         callback = () => {
             console.error('No callback for GET response');
         }
-    ) {
+    ): void {
         this.load('GET', endpoint, callback, options);
     }
 
@@ -23,7 +27,7 @@ class Loader {
         return res;
     }
 
-    makeUrl(options, endpoint) {
+    makeUrl(options: Option, endpoint: string) {
         const urlOptions = { ...this.options, ...options };
         let url = `${this.baseLink}${endpoint}?`;
 
@@ -34,7 +38,7 @@ class Loader {
         return url.slice(0, -1);
     }
 
-    load(method, endpoint, callback, options = {}) {
+    load(method, endpoint: string, callback:<T>, options = {}) {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())

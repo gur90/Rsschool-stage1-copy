@@ -15,7 +15,19 @@ export interface Source {
     country: string
 }
 export interface SourceArt {
-    articles: string[];
+    //articles: string[];
     status:string;
-    totalResults: number
+    totalResults: number;
+    articles: Array<Inews>
+    
 } 
+export interface Inews {
+    source: Source
+    author: string
+    title: string
+    description: string
+    url: string
+    urlToImage: string
+    publishedAt: string
+    content: string
+}
