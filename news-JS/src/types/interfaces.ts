@@ -31,3 +31,14 @@ export interface Inews {
     publishedAt: string
     content: string
 }
+export const enum Status {
+    ok = 0,
+    error = 1,
+}
+
+export type Everything = {
+    readonly status: string;
+    totalResults: number;
+    articles: Array<Inews>;
+    sources?: Array<Source>;
+};

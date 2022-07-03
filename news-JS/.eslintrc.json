@@ -22,6 +22,6 @@
         "no-console": 0,
         "class-methods-use-this": "off",
         "@typescript-eslint/rule-name": "error",
-        "no-explicit-any": true
+        "@typescript-eslint/no-explicit-any": 2
     }
 }

@@ -1,4 +1,4 @@
-import {Api} from '../../types/interfaces'
+import {Api, Everything} from '../../types/interfaces'
 type Option = Record<string, string>
 class Loader {
     baseLink: string
@@ -8,12 +8,12 @@ class Loader {
         this.options = options;
     }
 
-    getResp <T>(
+    getResp<T> (
         { endpoint, options = {} }: {endpoint:string, options?: Record<string, string>},
-        callback = () => {
+         callback :  (data:T )=> void =()=> {
             console.error('No callback for GET response');
         }
-    ): void {
+    ) {
         this.load('GET', endpoint, callback, options);
     }
 
@@ -38,7 +38,7 @@ class Loader {
         return url.slice(0, -1);
     }
 
-    load(method: 'GET' | 'POST', endpoint: string, callback: (data: JSON)=>void,options ={}): void {
+    load<T>(method: 'GET' | 'POST', endpoint: string, callback: (data: T)=>void,options ={}): void {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())
