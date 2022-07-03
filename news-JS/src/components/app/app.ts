@@ -1,6 +1,6 @@
 import AppController from '../../components/controller/controller';
 import { AppView } from '../../components/view/appView';
-import {Everything, SourceArt} from '../../types/interfaces'
+import {Everything} from '../../types/interfaces'
 
 type ArticleType = {
     source: {

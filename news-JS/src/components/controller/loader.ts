@@ -1,5 +1,5 @@
-import {Api, Everything} from '../../types/interfaces'
-type Option = Record<string, string>
+//import {Api, Everything} from '../../types/interfaces'
+//type Option = Record<string, string>
 class Loader {
     baseLink: string
     options: {apiKey?: string} 
@@ -41,9 +41,9 @@ class Loader {
     load<T>(method: 'GET' | 'POST', endpoint: string, callback: (data: T)=>void,options ={}): void {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
-            .then((res) => res.json())
-            .then((data) => callback(data))
-            .catch((err) => console.error(err));
+            .then((res): Promise<T> => res.json())
+            .then((data: T):void => callback(data))
+            .catch((err: Error) => console.error(err));
     }
 }
 
