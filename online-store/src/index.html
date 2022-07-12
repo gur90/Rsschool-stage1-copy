@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet'  href='dist/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.1.0/nouislider.min.css" />
+    <title>Online-store</title>
+</head>
+<body>
+   <header class="header">
+    <div class="wrapper">
+        <div class="header-menu">
+            <img class="logo" id="logotype" src="../assets/img/logo.jpeg" alt="logo">
+            <nav class="navigation">
+                <ul class="ul-navigation">
+                    <li class="link"><a href="#">Home</a></li>
+                    <li class="link"><a href="#">About</a></li>
+                    <li class="link"><a href="#">Products</a></li>
+                    <li class="link"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="icon-menu">
+                <div class="cart">
+                    <div id="cart-content"></div>
+                    <span class="name">Cart</span>
+                    <img class="icon" src="../assets/icons/cart.svg" alt="cart">
+                </div>
+                <div class="login">
+                    <span class="name">Login</span>
+                    <img class="icon" src="../assets/icons/login.svg" alt="login">
+                </div>
+            </div>
+        </div>
+    </div>
+   </header>
+   <main>
+    <div class="wrapper">
+        <div class="content">
+            <div class="filters">
+                <h2 class="colors">Color:</h2>
+                <table align ='center' cellspacing='10'>
+                <tr>
+                <td><input type="checkbox"></td><td>Green</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td><td>Blue</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td><td>Violet</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td><td>White</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td><td>Black</td>
+                </tr>
+                <tr>
+                <td><input type="checkbox"></td><td>Red</td>
+                </tr>
+                </table>
+                <div id="slider"></div>
+            </div>
+            <div class="goods" id="some-goods">
+                <div class="card" id="1">
+                    <h3 class="name">Landscaping</h3>
+                    <img class="card-image" src="../assets/img/1.jpg" alt="photo">
+                    <span class="price">283$</span>
+                </div>
+                <div class="card" id="5">
+                    <h3 class="name">Small dog</h3>
+                    <img class="card-image" src="../assets/img/5.jpg" alt="photo">
+                    <span class="price">25$</span>
+                </div>
+                <div class="card" id="6">
+                    <h3 class="name">Man</h3>
+                    <img class="card-image" src="../assets/img/6.jpg" alt="photo">
+                    <span class="price">63$</span>
+                </div>
+                <div class="card" id="11">
+                    <h3 class="name">Clock</h3>
+                    <img class="card-image" src="../assets/img/11.jpg" alt="photo">
+                    <span class="price">116$</span>
+                </div>
+                <div class="card" id="23">
+                    <h3 class="name">Girl</h3>
+                    <img class="card-image" src="../assets/img/23.jpg" alt="photo">
+                    <span class="price">25$</span>
+                </div>
+                <div class="card" id="32">
+                    <h3 class="name">Tree</h3>
+                    <img class="card-image" src="../assets/img/32.jpg" alt="photo">
+                    <span class="price">33$</span>
+                </div>
+                <div class="card" id="51">
+                    <h3 class="name">Afro-girl</h3>
+                    <img class="card-image" src="../assets/img/51.jpg" alt="photo">
+                    <span class="price">63$</span>
+                </div>
+                <div class="card" id="45">
+                    <h3 class="name">Grut</h3>
+                    <img class="card-image" src="../assets/img/45.jpg" alt="photo">
+                    <span class="price">21$</span>
+                </div>
+                <div class="card" id="41">
+                    <h3 class="name">Cat</h3>
+                    <img class="card-image" src="../assets/img/41.jpg" alt="photo">
+                    <span class="price">41$</span>
+                </div>
+                <div class="card" id="42">
+                    <h3 class="name">Cat</h3>
+                    <img class="card-image" src="../assets/img/42.jpg" alt="photo">
+                    <span class="price">41$</span>
+                </div>
+                <div class="card" id="37">
+                    <h3 class="name">Tooth</h3>
+                    <img class="card-image" src="../assets/img/37.jpg" alt="photo">
+                    <span class="price">16$</span>
+                </div>
+                <div class="card" id="9">
+                    <h3 class="name">Scull</h3>
+                    <img class="card-image" src="../assets/img/9.jpg" alt="photo">
+                    <span class="price">58$</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   </main>
+   <footer></footer> 
+   <script src="js/nouislider.min.js"></script>
+   <script src="../dist/index.js"></script>
+</body>
+</html>

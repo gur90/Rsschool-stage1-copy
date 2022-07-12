@@ -1,0 +1,48 @@
+html {
+    margin: auto
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper {
+    margin: 0 auto;
+    background-color: aquamarine;
+    width: 100%
+}
+header {
+    height:90px;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.ul-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 35px
+}
+.link{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black
+}
+.logo {
+    width: 200px;
+    height: auto;
+}
+.ul-navigation {
+    display: flex;
+    flex-direction: row;
+}
+.icon-menu {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    width: 30px;
+    height: auto;
+}
