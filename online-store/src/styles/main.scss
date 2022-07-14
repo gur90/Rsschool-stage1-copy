@@ -2,12 +2,13 @@
     display: flex;
 }
 .filters {
-    width: 7em;
-    background-color:blue;
+    width: 10em;
+    border-radius: 15px;
+    border: 2px black solid
 }
 .goods {
     flex:2;
-    background-color: bisque;
+   
 }
 .good-box {
     width:150px;
@@ -18,17 +19,24 @@
     justify-content: space-between;
     align-items: center;
 }
-.card {
+.good-wrapper {
     display: flex;
     flex-direction: column;
     
-    width: 130px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
     border: 1px solid black;
 }
 .goods {
-   
+    margin-top: 20px;
+   height: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    row-gap: 20px;
+}
+.good-image {
+    width: 200px;
+    height: auto;
+   
 }

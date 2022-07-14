@@ -3,4 +3,6 @@ import './styles/main.scss'
 import './styles/footer.scss'
 import './components/cart'
 import '../src/types/interfaces'
-import '../src/components/cards'
+import './components/filters'
+import './components/cards'
+console.log('hi')

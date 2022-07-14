@@ -1,34 +1,29 @@
-import * as noUiSlider from "../../node_modules/nouislider";
-function check(): void
-{
- const check=document.getElementsByTagName('input');
- for(let i=0;i<check.length;i++)
- {
-  if(check[i].type=='checkbox')
-  {
-   check[i].checked=true;
-  }
- }
-}
+import { Card } from "../types/interfaces";
+import { products } from "./products";
 
-function uncheck(): void
-{
- const uncheck=document.getElementsByTagName('input');
- for(let i=0;i<uncheck.length;i++)
- {
-  if(uncheck[i].type=='checkbox')
-  {
-   uncheck[i].checked=false;
-  }
- }
-}
-let slider = document.getElementById('slider');
-
-let slider=noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
+window.onload = function ():void {
+    const productCards = new Cards();
+    if(products) {
+        productCards.renderCardToDom()
     }
-});
+}
+export class Cards {
+    generateCard (data: typeof products): Card[]{
+        const cards: Card[]=[];
+        data.forEach(card=> {
+            cards.push(new Card(card));
+        })
+        return cards
+    }
+    getWrapper():HTMLElement {
+        const container = document.querySelector('#some-goods') as HTMLElement;
+        container.innerHTML='';
+        return container;
+    }
+    renderCardToDom(): void {
+        const cardsWrapper = this.getWrapper();
+        this.generateCard(products).forEach((card: Card):void => {
+            cardsWrapper.append(card.generateCard());
+        })
+    }
+}
