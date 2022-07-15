@@ -35,8 +35,38 @@
     flex-wrap: wrap;
     row-gap: 20px;
 }
-.good-image {
+img {
     width: 200px;
-    height: auto;
+    height: 300px;
+    align-self: center;
    
+}
+.good-image {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.btn-add {
+width: 100px;
+background-color: green;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.good-wrapper {
+    border-radius: 15px;
+}
+.good-title {
+    margin: 0 0 0 0;
+    align-self: center;
+}
+.good-price {
+    align-self: center;
+}
+.good-action {
+    display: flex;
+   justify-content: center;
 }

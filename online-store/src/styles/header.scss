@@ -35,7 +35,7 @@ a {
 }
 .logo {
     width: 200px;
-    height: auto;
+    height: 90px;
 }
 .ul-navigation {
     display: flex;
@@ -44,7 +44,8 @@ a {
 .icon-menu {
     display: flex;
     flex-direction: row;
-    background-color: white;
+    gap: 20px;
+    background-color: rgb(227, 240, 227);
     border-radius: 15px;
     height: 90px;
     align-items: center;
@@ -52,4 +53,12 @@ a {
 .icon {
     width: 30px;
     height: auto;
+}
+.cart {
+    position: relative;
+}
+.count {
+    position: absolute;
+    top: -12px;
+    right: -10px;
 }

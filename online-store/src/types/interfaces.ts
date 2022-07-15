@@ -37,7 +37,7 @@ export class Card implements ICard {
          const title: HTMLElement = this.createNode('h2', 'good-title');
         title.innerHTML = `${this.name} ${this.color}`;
         const price: HTMLElement = this.createNode('div', 'good-price');
-        price.innerHTML = `$${this.price}`;
+        price.innerHTML = `${this.price}`;
         const buttonWrapper = this.createNode('div', 'good-actions');
         button = `<button class = "btn-add">Buy</button>`;
         buttonWrapper.innerHTML = button;
