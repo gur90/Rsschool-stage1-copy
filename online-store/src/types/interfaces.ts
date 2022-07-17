@@ -31,7 +31,7 @@ export class Card implements ICard {
          const cardWrapper: HTMLElement = this.createNode('div', 'good-wrapper');
          const imageWrapper : HTMLElement = this.createNode('div', 'good-image');
     
-         this.imgUrl && (image = `<img src = ${this.imgUrl} alt = "decor">`);
+         this.imgUrl && (image = `<img src = ${this.imgUrl} alt = "decor" class="good-image-img">`);
          imageWrapper.innerHTML = image;
          const description: HTMLElement = this.createNode('div', 'container');
          const title: HTMLElement = this.createNode('h2', 'good-title');
