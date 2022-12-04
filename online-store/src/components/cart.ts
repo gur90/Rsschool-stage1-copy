@@ -1,12 +1,12 @@
-import { Card } from "../types/interfaces";
+/*import { Card } from "../types/interfaces";
 
-const productsBtn = document.querySelectorAll('.buy');
+const productsBtn = document.querySelectorAll('.btn-add');
 const cartProductsList = document.querySelectorAll('.cart-content-list');
 const cart = document.querySelectorAll('.cart');
 const cartCount = document.querySelectorAll('.count');
 const fullPrice = document.querySelectorAll('.fullprice');
-let price:number =0;
-
+let price:number = 0;
+console.log('9')
 const randomId = ()=> {
     return Math.random().toString(36).substring(2,15) + Math.random().toString(36).substring(2,15);
 }
@@ -47,14 +47,16 @@ productsBtn.forEach(el => {
     //el.closest('.content-good').getAttribute('data-id')
     //console.log('data-id')
     el.addEventListener('click', (e)=>{
+
         let self = e.currentTarget;
+        console.log(self)
         let parent = self.closest('.good-wrapper');
         let id = parent.dataset.id;
         let img = parent.querySelector('.good-image-img').getAttribute('src')
         let title = parent.querySelector('.good-title').textContent;
         
-        console.log(priceString);
-        let priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.good-price').textContent));
+       
+        const priceNumber = parseInt(priceWithoutSpaces(parent.querySelector('.good-price').textContent));
 
         plusFullPrice(priceNumber);
         printFullPrice();
@@ -62,4 +64,4 @@ productsBtn.forEach(el => {
         printCount()
         self.disabled = true
     })
-})
+})*/
